@@ -1,0 +1,101 @@
+.txt {
+  background-image: url("../../assets/ChatGPT\ Image\ Feb\ 8\,\ 2026\,\ 06_25_49\ PM.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.title div:nth-of-type(1) {
+  background-color: rgb(255, 255, 255, 0.3);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.txt h2 + p {
+  line-height: 1.8;
+}
+.txt h2 span {
+  color: #b8f6fc;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.cards .icon {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+.icon .fa-message,
+.icon .fa-users {
+  color: #79f39d;
+}
+.icon .fa-bell {
+  color: #ffe9ee;
+}
+.cards .card {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+}
+.cards .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2 ease;
+}
+.txt .rate {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.photo img {
+  width: 60px;
+  border-radius: 50%;
+}
+.photo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.photo p {
+  color: #d0dced;
+}
+.home {
+  display: flex;
+  min-height: 100vh;
+}
+.home .sec1 {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+}
+.home .sec1 .txt {
+  flex: 1;
+}
+.home .sec2 {
+  flex: 1;
+  min-height: 100vh;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .txt {
+    padding: 20px;
+  }
+  .numbers {
+    gap: 5px;
+  }
+}

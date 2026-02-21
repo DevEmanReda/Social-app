@@ -1,0 +1,114 @@
+.formInput {
+  background-color: #f3f4f6;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.formInput .contain {
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(520px, 100%);
+  padding: 25px;
+  border-radius: 16px;
+}
+.contain p span {
+  color: #78a6e1;
+}
+.btns button {
+  border-radius: 10px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.btns button:nth-of-type(1) {
+  border: 1px solid rgb(224, 224, 224);
+}
+.btns button:nth-of-type(2) {
+  background-color: #2b7efe;
+  color: white;
+}
+.btns button:nth-of-type(1) i {
+  color: rgb(230, 0, 0);
+}
+.btns button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2 ease;
+}
+.another-way p {
+  color: gray;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.another-way p::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, rgb(216, 216, 216), white);
+  display: inline-block;
+}
+.another-way p::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to left, rgb(216, 216, 216), white);
+  display: inline-block;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+form input,
+form select {
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 10px;
+  background-color: #f3f4f6;
+}
+form div i {
+  color: #9fa7b0;
+}
+form label {
+  font-weight: 500;
+  color: #555157;
+}
+form button {
+  background: linear-gradient(to right, rgb(82, 82, 82), rgb(184, 184, 184));
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:not(:disabled) {
+  background: linear-gradient(to right, #2b7efe, #1d5bbf);
+  cursor: pointer;
+}
+
+form button:disabled {
+  background: linear-gradient(to right, rgb(82, 82, 82), rgb(184, 184, 184));
+  opacity: 0.6;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .contain {
+    width: 100%;
+    white-space: nowrap;
+  }
+  .another-way p::after,
+  .another-way p::before {
+    width: 10 !important;
+  }
+  .btns button {
+    padding: 10px 20px;
+  }
+}
