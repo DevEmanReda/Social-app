@@ -67,7 +67,7 @@ return formatted
         await queryClient.cancelQueries({ queryKey: ['comments', post._id] })
         const previous = queryClient.getQueryData(['comments', post._id])
         const optimistic = {
-          _id: `temp-${Date.now()}`,
+          _id: `temp-${crypto.randomUUID()}`,
           content: variables.content,
           commentCreator: {
             name: localStorage.getItem('userName') || 'you',
@@ -223,7 +223,7 @@ return formatted
     const STATICIMAGE= 'https://img.freepik.com/premium-vector/young-man-avatar-character-due-avatar-man-vector-icon-cartoon-illustration_1186924-4438.jpg?semt=ais_user_personalization&w=740&q=80'
 
   return (
-    <Card className="max-w-[400px] p-3">
+    <Card className="max-w-100 p-3">
       <CardHeader className="flex gap-3 p-5 justify-between">
         <div className="flex gap-3">
           <Image

@@ -34,6 +34,7 @@ export default function Register() {
       setloading(true)
       const {data} = await axios.post('https://route-posts.routemisr.com/users/signup', formData)
         toast.success("Your Account has been created")
+        console.log(data)
     setTimeout(() => {
       navigate('/')
     }, 2000)

@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
-import { set } from "zod";
 
 export const authContext = createContext();
 
@@ -20,11 +19,13 @@ export default function AuthContextProvider({ children }) {
     }
 
     useEffect(() => {
-        if(localStorage.getItem('token')){
-            setlogin(localStorage.getItem('token'))
+        // Whenever the login token changes, reload user data.
+        if (islogin) {
             getUserData()
+        } else {
+            setuserdata(null)
         }
-    }, [])
+    }, [islogin])
 
     return (
     <authContext.Provider value={{ islogin, setlogin, userdata }}>

@@ -12,6 +12,7 @@ import ProtectedRoute from './pages/ProtectedRoute'
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import Profile from './pages/Profile'
+import Setting from './pages/Setting/Setting'
 export default function App() {
 
 
@@ -24,6 +25,7 @@ export default function App() {
         ]},
         {path:'appHome',element:<ProtectedRoute><AppHome></AppHome></ProtectedRoute>},
         {path:'profile',element:<ProtectedRoute><Profile></Profile></ProtectedRoute>},
+        {path:'Setting',element:<ProtectedRoute><Setting></Setting></ProtectedRoute>},
         {path:'*',element:<Notfound></Notfound>}
       ]}
   ])
