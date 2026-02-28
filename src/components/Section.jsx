@@ -46,21 +46,21 @@ export default function Section({ className = '' }) {
                     <div className="numbers flex gap-5 ">
                         <div>
                             <div className='flex gap-3 items-center'>
-                                <i class="fa-solid fa-users"></i>
+                                <i className="fa-solid fa-users"></i>
                                 <h5>2M+</h5>
                             </div>
                             <p>Active Users</p>
                         </div>
                         <div>
                             <div className='flex gap-3 items-center'>
-                                <i class="fa-solid fa-heart"></i>
+                                <i className="fa-solid fa-heart"></i>
                                 <h5>10M+</h5>
                             </div>
                             <p>Posts Shared</p>
                         </div>
                         <div>
                             <div className='flex gap-3 items-center'>
-                                <i class="fa-solid fa-message"></i>
+                                <i className="fa-solid fa-message"></i>
                                 <h5>50M+</h5>
                             </div>
                             <p>Messages Sent</p>
@@ -68,11 +68,11 @@ export default function Section({ className = '' }) {
                     </div>
                     <div className="rate">
                         <div className="stars text-orange-300">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
+                            <i className="fa-solid fa-star"></i>
                         </div>
                         <i>"SocialHub has completely changed how I connect with friends and discover new communities. The experience is seamless!"</i>
                         <div className="photo">
